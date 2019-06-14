@@ -11,10 +11,10 @@
         <ul>
           <h3>Currency List</h3>
           <li v-for="currency in currencies"
-          :key="`currency_${currency.id}`"
-          :ref="`currency_${currency.id}`"
-          class="currency-item"
-          @click="currencyClicked(currency)">
+            :key="`currency_${currency.id}`"
+            :ref="`currency_${currency.id}`"
+            class="currency-item"
+            @click="currencyClicked(currency)">
             {{ currency.iso }}
             <span @click="deleteCurrency($event, currency.id)">Delete</span>
           </li>

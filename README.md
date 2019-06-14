@@ -1,29 +1,30 @@
 # currency-admin
 
-## Project setup
+### Project setup
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn serve
 ```
 
-### Compiles and minifies for production
+### App uses JSON Server for fake API so it needs to be installed
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+yarn add json-server
 ```
 
-### Lints and fixes files
+### In the root folder of the app you will find db.json file, so to run server type:
 ```
-yarn run lint
+json-server db.json
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Technologies used
+- Webpack
+- Vue
+- Vuex
+- Vue Router
+- Bootstrap Vue
+- Axios
+- JSON Server
